@@ -30,11 +30,12 @@ npm install
 npm test
 ```
 
-## Configuración para GitHub Classroom
+## Cómo Usar Este Repositorio
 
-Este proyecto está configurado para trabajar con GitHub Classroom y ejecutará automáticamente las pruebas cuando se hagan commits al repositorio.
+1. Clona el repositorio en tu máquina local.
+2. Navega a la carpeta del proyecto.
+3. Instala las dependencias ejecutando `npm install`.
+4. Completa los ejercicios siguiendo las instrucciones en los archivos README de cada ejercicio.
+5. Ejecuta las pruebas utilizando `npm test` para verificar tu trabajo.
 
-## Recursos Adicionales
-
-- [MDN Web Docs - Fundamentos de HTML](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics)
-- [MDN Web Docs - Fundamentos de CSS](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/CSS_basics)
+¡Buena suerte y diviértete aprendiendo HTML!

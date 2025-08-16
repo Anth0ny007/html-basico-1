@@ -17,11 +17,11 @@ El objetivo de este ejercicio es aprender a manejar rutas de archivos en HTML, e
 
 ## Instrucciones
 
-1. Este ejercicio se creará dentro de la carpeta `src/ejercicio-1`.
+1. Este ejercicio se creará dentro de la carpeta `docs/ejercicio-1`.
 
-2. Crear una carpeta llamada `images` dentro de `src/ejercicio-1/` para organizar las imágenes.
+2. Crear una carpeta llamada `images` dentro de `docs/ejercicio-1/` para organizar las imágenes.
 
-3. Crear un archivo `galeria.html` ubicado en la carpeta `src/ejercicio-1`.
+3. Crear un archivo `galeria.html` ubicado en la carpeta `docs/ejercicio-1`.
 
 4. Agregar los siguientes elementos a tu documento HTML:
    - Un encabezado principal de nivel uno "Galería de Imágenes".
@@ -38,7 +38,7 @@ El objetivo de este ejercicio es aprender a manejar rutas de archivos en HTML, e
 
 6. **Estructura de carpetas esperada**:
    ```
-   src/ejercicio-1/
+   docs/ejercicio-1/
    ├── galeria.html
    ├── images/
    │   ├── imagen1.jpg

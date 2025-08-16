@@ -2,6 +2,11 @@
 
 Este repositorio contiene una carpeta llamada "ejercicios" donde encotrarás un archivo por cada ejercicio a realziar. Cada ejercicio incluye pruebas automatizadas para autocorrección y calificación automática.
 
+## Alumno
+
+#### Escriba su nombre completo aquí.
+##### Escriba su matrícula aquí.
+
 ## Estructura del Proyecto
 
 ```

@@ -4,23 +4,23 @@ const { JSDOM } = require('jsdom');
 
 describe('Ejercicio 5: Rutas de archivos e imágenes', () => {
   const rootPath = path.join(__dirname, '../../');
-  const filePath = path.join(rootPath, 'src', 'ejercicio-1', 'galeria.html');
-  const imgPath = path.join(rootPath, 'src', 'ejercicio-1', 'images');
+  const filePath = path.join(rootPath, 'docs', 'ejercicio-1', 'galeria.html');
+  const imgPath = path.join(rootPath, 'docs', 'ejercicio-1', 'images');
   
-  test('La carpeta src/ejercicio-1 debe existir', () => {
-    const srcPath = path.join(rootPath, 'src/ejercicio-1');    
-    expect(fs.existsSync(srcPath)).toBe(true);    
-    const stats = fs.statSync(srcPath);
+  test('La carpeta docs/ejercicio-1 debe existir', () => {
+    const docsPath = path.join(rootPath, 'docs/ejercicio-1');    
+    expect(fs.existsSync(docsPath)).toBe(true);    
+    const stats = fs.statSync(docsPath);
     expect(stats.isDirectory()).toBe(true);
   });
 
-  test('La carpeta src/ejercicio-1/images debe existir', () => {   
+  test('La carpeta docs/ejercicio-1/images debe existir', () => {   
     expect(fs.existsSync(imgPath)).toBe(true);    
     const stats = fs.statSync(imgPath);
     expect(stats.isDirectory()).toBe(true);
   });
   
-  test('El archivo src/ejercicio-1/galeria.html debe existir', () => {    
+  test('El archivo docs/ejercicio-1/galeria.html debe existir', () => {    
     expect(fs.existsSync(filePath)).toBe(true);        
     const stats = fs.statSync(filePath);
     expect(stats.isFile()).toBe(true);
@@ -54,8 +54,8 @@ describe('Ejercicio 5: Rutas de archivos e imágenes', () => {
     
     // Verificar que al menos una imagen use ruta relativa
     const hasRelativePath = Array.from(images).some(img => {
-      const src = img.getAttribute('src');
-      return src && (src.startsWith('./') || src.startsWith('images/') || !src.startsWith('http'));
+      const docs = img.getAttribute('docs');
+      return docs && (docs.startsWith('./') || docs.startsWith('images/') || !docs.startsWith('http'));
     });
     
     expect(hasRelativePath).toBe(true);
@@ -98,15 +98,15 @@ describe('Ejercicio 5: Rutas de archivos e imágenes', () => {
     expect(images.length).toBeGreaterThan(0);
     
     images.forEach(img => {
-      const src = img.getAttribute('src');
-      expect(src).toBeTruthy();
+      const docs = img.getAttribute('docs');
+      expect(docs).toBeTruthy();
       
       // No debe usar rutas absolutas del sistema
-      expect(src).not.toMatch(/^[A-Z]:\\/);
-      expect(src).not.toMatch(/^\/[^\/]/);
+      expect(docs).not.toMatch(/^[A-Z]:\\/);
+      expect(docs).not.toMatch(/^\/[^\/]/);
       
       // No debe tener espacios en las rutas
-      expect(src).not.toMatch(/\s/);
+      expect(docs).not.toMatch(/\s/);
     });
   });
 

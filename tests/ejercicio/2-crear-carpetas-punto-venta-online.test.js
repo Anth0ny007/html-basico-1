@@ -2,9 +2,9 @@ const fs = require('fs');
 const path = require('path');
 
 describe('Ejercicio 2: Estructura de carpetas punto-venta-online', () => {
-    const basePath = path.join(__dirname, '../../src');
+    const basePath = path.join(__dirname, '../../docs');
     
-    test('debe existir la carpeta src/', () => {
+    test('debe existir la carpeta docs/', () => {
         expect(fs.existsSync(basePath)).toBe(true);
         expect(fs.statSync(basePath).isDirectory()).toBe(true);
     });

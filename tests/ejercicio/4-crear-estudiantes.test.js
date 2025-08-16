@@ -4,16 +4,16 @@ const { JSDOM } = require('jsdom');
 
 describe('Ejercicio 4: Estructura base HTML', () => {
   const rootPath = path.join(__dirname, '../../');
-  const filePath = path.join(rootPath, 'src', 'ejercicio-1', 'estudiantes.html');
+  const filePath = path.join(rootPath, 'docs', 'ejercicio-1', 'estudiantes.html');
   
-  test('La carpeta src/ejercicio-1 debe existir', () => {
-    const srcPath = path.join(rootPath, 'src/ejercicio-1');    
-    expect(fs.existsSync(srcPath)).toBe(true);    
-    const stats = fs.statSync(srcPath);
+  test('La carpeta docs/ejercicio-1 debe existir', () => {
+    const docsPath = path.join(rootPath, 'docs/ejercicio-1');    
+    expect(fs.existsSync(docsPath)).toBe(true);    
+    const stats = fs.statSync(docsPath);
     expect(stats.isDirectory()).toBe(true);
   });
   
-    test('El archivo src/ejercicio-1/estudiantes.html debe existir', () => {    
+    test('El archivo docs/ejercicio-1/estudiantes.html debe existir', () => {    
        expect(fs.existsSync(filePath)).toBe(true);        
         const stats = fs.statSync(filePath);
         expect(stats.isFile()).toBe(true);

@@ -4,17 +4,17 @@ const path = require('path');
 describe('Ejercicio 1: Crear carpetas', () => {
   const rootPath = path.join(__dirname, '../../');
   
-  test('La carpeta src debe existir', () => {
-    const srcPath = path.join(rootPath, 'src');
+  test('La carpeta docs debe existir', () => {
+    const docsPath = path.join(rootPath, 'docs');
     
-    expect(fs.existsSync(srcPath)).toBe(true);
+    expect(fs.existsSync(docsPath)).toBe(true);
     
-    const stats = fs.statSync(srcPath);
+    const stats = fs.statSync(docsPath);
     expect(stats.isDirectory()).toBe(true);
   });
   
-  test('La carpeta src/data debe existir', () => {
-    const dataPath = path.join(rootPath, 'src', 'data');
+  test('La carpeta docs/data debe existir', () => {
+    const dataPath = path.join(rootPath, 'docs', 'data');
     
     expect(fs.existsSync(dataPath)).toBe(true);
     
@@ -22,8 +22,8 @@ describe('Ejercicio 1: Crear carpetas', () => {
     expect(stats.isDirectory()).toBe(true);
   });
 
-  test('La carpeta src/ejercicio-1 debe existir', () => {
-    const ejercicio1Path = path.join(rootPath, 'src', 'ejercicio-1');
+  test('La carpeta docs/ejercicio-1 debe existir', () => {
+    const ejercicio1Path = path.join(rootPath, 'docs', 'ejercicio-1');
 
     expect(fs.existsSync(ejercicio1Path)).toBe(true);
 

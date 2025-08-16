@@ -4,7 +4,7 @@
 Crear la estructura de carpetas básica para un proyecto web de un punto de venta online.
 
 ## Requerimientos:
-1. **Crea la carpeta principal del proyecto** llamada `src/punto-venta-online`.
+1. **Crea la carpeta principal del proyecto** llamada `docs/punto-venta-online`.
 2. Dentro de la carpeta principal del proyecto, crea las siguientes subcarpetas:
     - `frontend` (para archivos de la interfaz de usuario)
     - `backend` (para la lógica del servidor)
@@ -21,7 +21,7 @@ Crear la estructura de carpetas básica para un proyecto web de un punto de vent
 5. Dentro de la carpeta `database`, crea una carpeta llamada `migrations`.
 **Ejemplo de estructura:**
 ```
-src/
+docs/
 └── punto-venta-online/
     ├── frontend/
     │   ├── css/

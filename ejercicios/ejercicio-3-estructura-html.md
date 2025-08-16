@@ -3,8 +3,8 @@
 El objetivo de este ejercicio es crear una página HTML sencilla que demuestre el uso de elementos básicos de HTML. Aprenderás cómo estructurar un documento HTML.
 
 ## Instrucciones
-1. Crear la carpeta `src/ejercicio-1` si no existe.
-2. Crear un archivo `index.html` ubicado en la carpeta `src/ejercicio-1`.
+1. Crear la carpeta `docs/ejercicio-1` si no existe.
+2. Crear un archivo `index.html` ubicado en la carpeta `docs/ejercicio-1`.
 3. El archivo debe contener la estructura HTML básica completa:
     - Declaración `tipo de documento`
     - Elemento html principal. 

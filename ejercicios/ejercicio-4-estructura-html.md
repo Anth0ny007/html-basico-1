@@ -5,9 +5,9 @@
 El objetivo de este ejercicio es crear una página HTML sencilla que demuestre el uso de elementos básicos de HTML. Aprenderás cómo estructurar un documento HTML.
 ## Instrucciones
 
-1. Este ejercicio se creará dentro de la carpeta `src/ejercicio-1`. El texto utilizado para reste ejercicio debe ser alusivo a la informática.
+1. Este ejercicio se creará dentro de la carpeta `docs/ejercicio-1`. El texto utilizado para reste ejercicio debe ser alusivo a la informática.
 
-2. Crear un archivo `estudiantes.html` ubicado en la carpeta `src/ejercicio-1`.
+2. Crear un archivo `estudiantes.html` ubicado en la carpeta `docs/ejercicio-1`.
 3. Agrega los siguientes elementos a tu documento HTML:
    - Un encabezado principal de nivel uno "Nuestros Estudiantes".
    - Un subencabezado  de nivel dos "HTML Básico".

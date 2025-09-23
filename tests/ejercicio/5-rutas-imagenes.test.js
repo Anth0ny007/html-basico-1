@@ -54,8 +54,8 @@ describe('Ejercicio 5: Rutas de archivos e imágenes', () => {
     
     // Verificar que al menos una imagen use ruta relativa
     const hasRelativePath = Array.from(images).some(img => {
-      const docs = img.getAttribute('docs');
-      return docs && (docs.startsWith('./') || docs.startsWith('images/') || !docs.startsWith('http'));
+      const src = img.getAttribute('src');
+      return src && (src.startsWith('./') || src.startsWith('images/') || !src.startsWith('http'));
     });
     
     expect(hasRelativePath).toBe(true);
@@ -98,15 +98,15 @@ describe('Ejercicio 5: Rutas de archivos e imágenes', () => {
     expect(images.length).toBeGreaterThan(0);
     
     images.forEach(img => {
-      const docs = img.getAttribute('docs');
-      expect(docs).toBeTruthy();
+      const src = img.getAttribute('src');
+      expect(src).toBeTruthy();
       
       // No debe usar rutas absolutas del sistema
-      expect(docs).not.toMatch(/^[A-Z]:\\/);
-      expect(docs).not.toMatch(/^\/[^\/]/);
+      expect(src).not.toMatch(/^[A-Z]:\\/);
+      expect(src).not.toMatch(/^\/[^\/]/);
       
       // No debe tener espacios en las rutas
-      expect(docs).not.toMatch(/\s/);
+      expect(src).not.toMatch(/\s/);
     });
   });
 
